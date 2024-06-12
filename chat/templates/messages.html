@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensajes</title>
+</head>
+<body>
+    <h1>Mensajes</h1>
+    <ul>
+    {% for mensaje in mensajes %}
+        <li><strong>{{ mensaje.persona.nombre }} {{ mensaje.persona.ap_pat }} {{ mensaje.persona.ap_mat }}</strong> - <span style="color: blue;">{{ mensaje.persona.carrera.nombre }}</span>: {{ mensaje.txt_mensaje }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
